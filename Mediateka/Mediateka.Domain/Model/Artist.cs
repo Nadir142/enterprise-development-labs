@@ -7,28 +7,28 @@ namespace Mediateka.Domain.Model;
 /// 
 public class Artist
 {
-    // <summary>
+    /// <summary>
     /// Идентификатор артиста
     /// </summary>
     [Key]
     public required int Id { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Имя артиста
     /// </summary>
     public string? Name { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Биография 
     /// </summary>
     public string? Biography { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Id жанра,связанного с артистом
     /// </summary>
     public required int GenreID { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Жанр
     /// </summary>
     public virtual Genre? Genre { get; set; }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediateka.Domain", "Mediateka.Domain\Mediateka.Domain.csproj", "{769A0279-5426-4C1E-B0DB-C08AF8ABAA36}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A293259F-78AF-4BDE-861B-DA43B7E4E7E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediateka.Domain.Tests", "Mediateka.Domain.Tests\Mediateka.Domain.Tests.csproj", "{B085AC75-AC0B-48B3-A474-D562DC39E505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediateka.Application.Contracts", "Mediateka.Application.Contracts\Mediateka.Application.Contracts.csproj", "{A9DEFAED-CB89-41D2-8ABA-1D5EC1954140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediateka.Application", "Mediateka.Application\Mediateka.Application.csproj", "{BD068FDC-6E9C-48C9-A518-D1BC3B561A94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,14 @@ Global
 		{B085AC75-AC0B-48B3-A474-D562DC39E505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B085AC75-AC0B-48B3-A474-D562DC39E505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B085AC75-AC0B-48B3-A474-D562DC39E505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9DEFAED-CB89-41D2-8ABA-1D5EC1954140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9DEFAED-CB89-41D2-8ABA-1D5EC1954140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9DEFAED-CB89-41D2-8ABA-1D5EC1954140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9DEFAED-CB89-41D2-8ABA-1D5EC1954140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD068FDC-6E9C-48C9-A518-D1BC3B561A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD068FDC-6E9C-48C9-A518-D1BC3B561A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD068FDC-6E9C-48C9-A518-D1BC3B561A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD068FDC-6E9C-48C9-A518-D1BC3B561A94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +44,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{769A0279-5426-4C1E-B0DB-C08AF8ABAA36} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 		{B085AC75-AC0B-48B3-A474-D562DC39E505} = {A293259F-78AF-4BDE-861B-DA43B7E4E7E3}
+		{A9DEFAED-CB89-41D2-8ABA-1D5EC1954140} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{BD068FDC-6E9C-48C9-A518-D1BC3B561A94} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E323CEC-6D24-4AFA-AB95-087A8B852B7A}

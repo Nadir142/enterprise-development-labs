@@ -1,5 +1,5 @@
-﻿using Mediateka.Domain.Model;
-using Mediateka.Domain.Data;
+﻿using Mediateka.Domain.Data;
+using Mediateka.Domain.Model;
 
 namespace Mediateka.Domain.Services.InMemory;
 /// <summary>

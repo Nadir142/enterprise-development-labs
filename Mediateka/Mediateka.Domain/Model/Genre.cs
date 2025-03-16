@@ -7,13 +7,13 @@ namespace Mediateka.Domain.Model;
 /// 
 public class Genre
 {
-    // <summary>
+    /// <summary>
     /// Идентификатор жанра
     /// </summary>
     [Key]
     public required int Id { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Название жанра
     /// </summary>
     public string? Name { get; set; }

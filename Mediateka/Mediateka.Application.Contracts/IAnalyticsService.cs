@@ -1,17 +1,15 @@
-﻿using Mediateka.Domain.Model;
-namespace Mediateka.Domain.Services;
+﻿namespace Mediateka.Application.Contracts;
 /// <summary>
-/// Наследник обобщенного интерфейса для альбомов с дополнительной функциональностью 
+/// Интерфейс для службы, выполняющей аналитические запросы согласно бизнес-логике приложения
 /// </summary>
-public interface IAlbumRepository : IRepository<Album, int>
+public interface IAlbumAnalyticsService
 {
     /// <summary>
     /// Возвращает список треков для указанного альбома
     /// </summary>
-    /// <param name="AlbumId">ID альбома.</param>
+    /// <param name="albumId">ID альбома.</param>
     /// <returns>Список строк с информацией о треках.</returns>
     public IList<string> GetTreksInAlbum();
-
 
     /// <summary>
     /// Возвращает список треков для указанного альбома
@@ -30,4 +28,16 @@ public interface IAlbumRepository : IRepository<Album, int>
     /// <returns>Список с минимальной, средней и максимальной длительностью альбомов.</returns>
     public Task<IList<(int MinDuration, double avgDuration, int maxDuration)>> GetAlbumDurationStatistics();
 
+}
+public interface IArtistAnalyticsService
+{
+    /// <summary>
+    /// Возвращает информацию о всех артистах в виде списка строк.
+    /// </summary>
+    public IList<string> GetAllArtisInfo();
+    /// <summary>
+    /// Метод для вывода артистов с максимальныи количествм альбомов
+    /// </summary>
+    /// <returns>Список артистов и альбомов</returns>
+    public IList<string> GetArtistsWithMaxAlbums();
 }

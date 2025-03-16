@@ -7,35 +7,35 @@ namespace Mediateka.Domain.Model;
 /// 
 public class Track
 {
-    // <summary>
+    /// <summary>
     /// Идентификатор трека
     /// </summary>
     [Key]
     public required int Id { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Название трека
     /// </summary>
     public string? Name { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Номер в альбоме 
     /// </summary>
     public int? NumberInAlbum { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Альбом
     /// </summary>
     public virtual Album? Albums { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Id альбома,связанного с треком
     /// </summary>
     public required int AlbumId { get; set; }
 
 
 
-    // <summary>
+    /// <summary>
     /// Длительность трека(в сек)
     /// </summary>
     public int? Duration { get; set; }

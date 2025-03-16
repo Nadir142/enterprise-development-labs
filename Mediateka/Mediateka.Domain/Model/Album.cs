@@ -7,18 +7,18 @@ namespace Mediateka.Domain.Model;
 /// 
 public class Album
 {
-    // <summary>
+    /// <summary>
     /// Идентификатор альбома
     /// </summary>
     [Key]
     public required int Id { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Название альбома
     /// </summary>
     public string? Name { get; set; }
 
-    // <summary>
+    /// <summary>
     /// Год релиза
     /// </summary>
     public int? Year { get; set; }
