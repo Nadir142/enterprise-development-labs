@@ -33,8 +33,6 @@ public class Track
     /// </summary>
     public required int AlbumId { get; set; }
 
-
-
     /// <summary>
     /// Длительность трека(в сек)
     /// </summary>

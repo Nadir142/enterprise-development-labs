@@ -85,6 +85,4 @@ public class ArtistInMemoryRepository : IRepository<Artist, int>
                 $"Количество альбомов: {Artist.AlbumCount}")
             .ToList();
     }
-
-
 }

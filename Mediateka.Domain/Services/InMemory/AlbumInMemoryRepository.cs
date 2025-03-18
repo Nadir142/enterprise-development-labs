@@ -2,6 +2,7 @@
 using Mediateka.Domain.Model;
 
 namespace Mediateka.Domain.Services.InMemory;
+
 /// <summary>
 /// Имплементация репозитория для альбомов, которая хранит коллекцию в оперативной памяти 
 /// </summary>
@@ -104,7 +105,6 @@ public class AlbumInMemoryRepository : IRepository<Album, int>
     /// Получить информацию о количестве треков, среднем и максимальной дляительности для каждого альбома.
     /// </summary>
     /// <returns>Список с минимальной, средней и максимальной длительностью альбомов.</returns>
-
     public Task<IList<(int MinDuration, double avgDuration, int maxDuration)>> GetAlbumDurationStatistics()
     {
         var albumDurations = _albums
@@ -121,7 +121,6 @@ public class AlbumInMemoryRepository : IRepository<Album, int>
 
         return Task.FromResult<IList<(int, double, int)>>(albumDurations);
     }
-
 }
 
 

@@ -239,7 +239,6 @@ public static class DataSeeder
         },
         ];
 
-
     static DataSeeder()
     {
         foreach (var t in Tracks)

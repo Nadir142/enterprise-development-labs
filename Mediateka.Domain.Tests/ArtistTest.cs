@@ -3,6 +3,7 @@ using Mediateka.Domain.Services.InMemory;
 using Mediateka.Domain.Data;
 
 namespace Mediateka.Domain.Tests;
+
 /// <summary>
 /// Класс с юнит-тестами
 /// </summary>
@@ -13,6 +14,7 @@ public class ArtistTests
     {
         _repository = new ArtistInMemoryRepository();
     }
+
     /// <summary>
     /// Тест метода, возвращающего информацию о всех артистах
     /// </summary>
